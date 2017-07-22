@@ -1,0 +1,322 @@
+
+/* -------------------------------------------------------
+                      General Styling
+---------------------------------------------------------*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #444;
+
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-weight: 400;
+
+  /* the base size that all other relative sizes are based on */
+  font-size: 17px;
+  text-rendering: optimizeLegibility;
+
+  /* hides content that overflows on the X-axis */
+  overflow-x: hidden;
+}
+
+
+
+/* this commonly-used class clears the "float" property after the element clearfix is in*/
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+.row {
+    max-width: 1140px;
+   
+    /* Centers this row on the webpage.
+       Top and bottom are 0, side margins are auto */
+    margin: 0 auto;
+}
+
+
+section {
+    padding: 80px 0; 
+}
+
+.box {
+    padding: 15px;
+}
+
+
+
+
+h2 {
+  text-align: center;
+    
+  /*color: #4169e1;*/
+
+  font-size: 200%;
+  font-weight: 300;
+    
+  word-spacing: 2px;
+}
+
+/* a horizontal line that appears after h2 headings */
+h2:after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #4169e1;
+
+  /* need content, but we don't want to show anything, so we make it a space */
+  content: " ";
+
+  /* centers it */
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+/* -------------------------------------------------------
+                     Navigation Menu
+---------------------------------------------------------*/
+
+
+
+
+nav {
+  width: 100%;
+}
+
+nav .sticky {
+  position: fixed;
+  background-color: #4169e1;
+}
+
+.nav-top-left {
+  float: left;
+}
+
+.nav-top-right {
+  float: right;
+}
+
+.nav-top-left li,
+.nav-top-right li {
+  list-style: none;         /* removes bullets */
+  display: inline-block;    /* allows the elements to be side-by-side */
+  padding-top: 7px;
+  padding-bottom: 4px;
+}
+
+.nav-top-left li {
+  margin-left: 12px;
+}
+
+.nav-top-right li {
+  margin-left: 40px;
+}
+
+.nav-top-right li:last-child {
+  margin-right: 12px;
+}
+
+
+
+
+
+.nav-top-right .section-link {
+  text-transform: uppercase;
+}
+
+.section-link:link,
+.section-link:visited {
+  text-decoration: none;
+
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+
+  color: #fffaf0;
+
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
+}
+
+.section-link:hover,
+.section-link:active {
+  border-bottom: 1px solid #fffaf0;
+}
+
+.sticky .section-link:link,
+.sticky .section-link:visited {
+  color: #fffaf0;
+}
+
+
+
+
+/* -------------------------------------------------------
+                         Hero
+---------------------------------------------------------*/
+
+
+
+
+header {
+  /*background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
+  /*background-image: linear-gradient(to right, rgb(0, 31, 62), rgba(32, 79, 193, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
+  /*background-image: linear-gradient(to right, rgb(0, 15, 30), rgba(0, 15, 30, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 15, 30, 0.7)), url(../../vendors/img/berry-van-der-velden-32818.jpg);
+
+  /* finds a way to show as much of the image as possible */
+  background-size: cover;
+  background-position: center;
+
+  /* instead of showing the whole image, we scroll past the image */
+  background-attachment: fixed;
+
+  /* 100% of viewport */
+  height: 100vh;
+}
+
+
+.banner {
+  /* as a group, these vertically center the element */
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+
+  width: 100%;
+
+  /*background-color: rgba(28, 255, 0, 0.51);*/
+}
+
+.nameplate {
+  margin-left: 10%;
+  display: inline-block;
+  padding: 10px;
+  float: left;
+
+  /* as a group, these vertically center the element */
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+
+  /*background-color: rgba(255, 0, 0, 0.51);*/
+}
+
+h1 {
+  font-family: 'Josefin Sans', 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 355%;
+  color: white;
+  text-align: center;
+
+  /*background-color: rgba(65, 105, 225, 0.51);*/
+}
+
+
+/* line that appears after heading */
+.separator {
+  display: block;
+  height: 1px;
+  width: 300px;
+  border-bottom: 1px solid white;
+
+  /* need content, but we don't want to show anything, so we make it a space */
+  content: " ";
+
+  /* centers it */
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+
+.nameplate ul{
+  text-align: center;
+
+  /*background-color: rgba(65, 105, 225, 0.51);*/
+}
+
+.nameplate li {
+  font-family: 'Josefin Sans', 'Arial', sans-serif;
+  font-weight: 100;
+  font-size: 235%;
+  color: white;
+  padding: 0 10px;
+
+  display: inline-block;
+}
+
+.banner img {
+  display: inline-block;
+  float: right;
+  border-radius: 50%;
+  margin-right: 10%;
+  width: 330px;
+}
+
+
+
+
+/* ------------------------------------------
+                      About
+   ------------------------------------------ */
+
+.space-at-top {
+  height: 20px;
+}
+
+
+.introduction{
+  width: 100%;
+
+  display: inline-block;
+  margin-left: 15%;
+}
+
+.introduction p {
+  width: 70%;
+
+  line-height: 150%;
+  padding-bottom: 10px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+
+.goal p{
+  text-align: center;
+  font-size: 120%;
+  color: #4169e1;
+}
+
+
+.goal p:first-child {
+  padding-top: 20px;
+}
+
+.goal p:last-child {
+  padding-bottom: 25px;
+}
