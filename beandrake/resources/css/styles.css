@@ -41,22 +41,37 @@ body {
 
 
 
-.row {
-    max-width: 1140px;
-   
-    /* Centers this row on the webpage.
-       Top and bottom are 0, side margins are auto */
-    margin: 0 auto;
-}
-
-
 section {
     padding: 80px 0; 
+    
+    /* prevents outline after being link-scrolled to */
+    outline: none;
 }
 
-.box {
-    padding: 15px;
+
+.introduction{
+    margin-left: 15%;
+    width: 70%;
+    /* there's 15% margin on the right by default, because 100 - 15 - 70 = 15 */
+
+  display: inline-block;  
 }
+
+.introduction p {
+
+  line-height: 150%;
+  padding-bottom: 10px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+
+
+
 
 
 
@@ -64,6 +79,7 @@ section {
 h2 {
   text-align: center;
     
+  /*text-transform: uppercase;*/
   /*color: #4169e1;*/
 
   font-size: 200%;
@@ -87,6 +103,15 @@ h2:after {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -227,24 +252,24 @@ h1 {
   font-size: 355%;
   color: white;
   text-align: center;
+  margin:0;
 
   /*background-color: rgba(65, 105, 225, 0.51);*/
 }
 
 
 /* line that appears after heading */
-.separator {
+h1:after{
   display: block;
   height: 1px;
   width: 300px;
   border-bottom: 1px solid white;
 
-  /* need content, but we don't want to show anything, so we make it a space */
-  content: " ";
+  content: " ";  /* content is required */
 
   /* centers it */
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-bottom: 6px;
 }
 
@@ -276,24 +301,20 @@ h1 {
 
 
 
-/* ------------------------------------------
-                      About
-   ------------------------------------------ */
-
-.space-at-top {
-  height: 20px;
-}
+/* -------------------------------------------------------
+                         About
+---------------------------------------------------------*/
 
 
 .introduction{
-  width: 100%;
+    margin-left: 15%;
+    width: 70%;
+    /* there's 15% margin on the right by default, because 100 - 15 - 70 = 15 */
 
-  display: inline-block;
-  margin-left: 15%;
+  display: inline-block;  
 }
 
 .introduction p {
-  width: 70%;
 
   line-height: 150%;
   padding-bottom: 10px;
@@ -306,7 +327,7 @@ h1 {
 }
 
 
-.goal p{
+.goal p {
   text-align: center;
   font-size: 120%;
   color: #4169e1;
@@ -319,4 +340,123 @@ h1 {
 
 .goal p:last-child {
   padding-bottom: 25px;
+}
+
+
+
+
+
+
+/* -------------------------------------------------------
+                         Projects
+---------------------------------------------------------*/
+
+
+
+#projects {
+    background-color: #f4f4f4;
+    
+}
+
+.project-item {
+    width: auto
+}
+
+
+
+
+
+/* -------------------------------------------------------
+                         Social
+---------------------------------------------------------*/
+
+
+
+
+
+.social-links {
+  width: 100%;
+  display: inline-block;
+}
+
+.social-links ul {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-links li {
+  list-style: none;         /* removes bullets */
+  display: inline-block;    /* allows the elements to be side-by-side */
+
+  padding: 10px;
+}
+
+.ion-social-linkedin,
+.ion-social-github{
+  font-size: 300%;
+  color: #555;
+
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.ion-social-linkedin:hover,
+.ion-social-linkedin:active {
+  color: #0077B5;
+}
+
+.ion-social-github:hover,
+.ion-social-github:active {
+  color: #24292e;
+}
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------
+                         Footer
+---------------------------------------------------------*/
+
+
+
+
+footer {
+    background-color: #153185;
+    padding: 40px;
+    font-size: 80%;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+
+footer a:link,
+footer a:visited{
+    color: inherit;
+    
+    /* replace old-and-busted underline with new-hotness */
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+footer a:hover,
+footer a:active {
+    color: inherit;
+    border-bottom: 1px solid white;
 }
