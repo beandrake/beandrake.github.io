@@ -49,26 +49,19 @@ section {
 }
 
 
-.introduction{
+.long-copy {
+    display: inline-block;  
     margin-left: 15%;
     width: 70%;
-    /* there's 15% margin on the right by default, because 100 - 15 - 70 = 15 */
-
-  display: inline-block;  
+    
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.introduction p {
-
-  line-height: 150%;
-  padding-bottom: 10px;
-
-  padding-left: 30px;
-  padding-right: 30px;
-
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+.long-copy p {
+    padding-bottom: 10px;
+    line-height: 150%;
 }
-
 
 
 
@@ -306,22 +299,7 @@ h1:after{
 ---------------------------------------------------------*/
 
 
-.introduction{
-    margin-left: 15%;
-    width: 70%;
-    /* there's 15% margin on the right by default, because 100 - 15 - 70 = 15 */
-
-  display: inline-block;  
-}
-
-.introduction p {
-
-  line-height: 150%;
-  padding-bottom: 10px;
-
-  padding-left: 30px;
-  padding-right: 30px;
-
+.introduction {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
 }
@@ -359,7 +337,11 @@ h1:after{
 }
 
 .project-item {
-    width: auto
+    background-color:aqua;
+}
+
+.project-item h3 {
+    
 }
 
 
