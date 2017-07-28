@@ -6,6 +6,7 @@
         <!-- this tells mobile phones not to zoom out by default -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        
         <!-- An open-source CSS that makes CSS look the same regardless of browser. -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         
@@ -23,7 +24,9 @@
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
         
         
+        
         <!-- Google Fonts -->
+        
         
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
         
@@ -32,6 +35,7 @@
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet" type="text/css">
         
  
+        
         
         <title>
             beandrake.com
@@ -61,22 +65,23 @@
         
         
         
-        <header>
+        <header id="top">
 
           <!------------ Navigation Menu - Start --------------->
 
           
             <nav>
                 <div>
-                  <ul class="nav-top-left">
-                    <li><a class="section-link" href="#main">beandrake.com</a></li>
-                  </ul>
-                  <ul class="nav-top-right">
-                    <li><a class="section-link" href="#about">About</a></li>
-                    <li><a class="section-link" href="#projects">Projects</a></li>
+                    <ul class="nav-top-left js--nav-top-left">
+                        <li><a class="section-link" href="#top">beandrake.com</a></li>
+                    </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                    <ul class="nav-top-right js--nav-top-right">
+                        <li><a class="section-link" href="#about">About</a></li>
+                        <li><a class="section-link" href="#projects">Projects</a></li>
 <!--                    <li><a class="section-link" href="#blog">Blog</a></li>-->
-                    <li><a class="section-link" href="#social">Contact</a></li>
-                  </ul>
+                        <li><a class="section-link" href="#social">Contact</a></li>
+                    </ul>
                 </div>
             </nav>
           
@@ -110,7 +115,7 @@
         ---------------------------------------------->
         
         
-        <section id="about">
+        <section id="about" class="js--sticky-nav-trigger">
 
               <h2>Hi there</h2>
               <div class="introduction long-copy">
@@ -145,6 +150,7 @@
             <div class="project-item long-copy lotr-witn">
                 <div class="project-overview">
                 <h3>Lord of the Rings: War in the North</h3>
+                <p>AAA Video Game</p>
                 <p>Role: Technical Designer</p>
                 </div>
                 <div class="project-details">
