@@ -29,11 +29,10 @@ $(document).ready(function() {
     
     // animate mobile nav menu to close
     $.fn.setNavToUp = function() {
-        var nav = $('.js--nav-top-right');
         var icon = $('.js--nav-icon i');
 
         // slide content up over 0.2 seconds
-        nav.slideUp(200); 
+        $('.js--nav-top-right').slideUp(200); 
         
         // add menu icon, remove any X icon
         icon.addClass('ion-navicon-round');
@@ -43,11 +42,10 @@ $(document).ready(function() {
     
     // animate mobile nav menu to open
     $.fn.setNavToDown = function() {
-        var nav = $('.js--nav-top-right');
         var icon = $('.js--nav-icon i');
 
         // slide content down over 0.2 seconds
-        nav.slideDown(200);
+        $('.js--nav-top-right').slideDown(200);
         
         // add menu icon, remove any X icon
         icon.removeClass('ion-navicon-round');
@@ -75,7 +73,8 @@ $(document).ready(function() {
     
     $('.js--nav-top-left a, .js--nav-top-right a').click(function() {
         
-        if($(window).width() <= 620) {
+        // the nav icon is only displayed when mobile nav is active
+        if ($('.mobile-nav-icon').css("display") !== "none"){
             $.fn.setNavToUp(); 
         }
     });
