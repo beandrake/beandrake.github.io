@@ -101,7 +101,7 @@ h2:after {
 ---------------------------------------------------------*/
 
 
-
+/* ------------------------ Mobile Nav First! --------------------------- */
 
 nav {
     width: 100%;
@@ -117,18 +117,19 @@ nav {
 
 .nav-top-right {
   float: right;
+  display: none;
 }
 
 .nav-top-left li,
 .nav-top-right li {
   list-style: none;         /* removes bullets */
-  display: inline-block;    /* allows the elements to be side-by-side */
   padding-top: 7px;
   padding-bottom: 4px;
 }
 
 .nav-top-left li {
   margin-left: 12px;
+    display: inline-block;    /* allows the elements to be side-by-side */
 }
 
 .nav-top-right li {
@@ -169,7 +170,7 @@ nav {
 
 .mobile-nav-icon {
     /* hidden by default */
-    display: none;
+    display: inline-block;
     
     /* let's give them a hand */
     cursor: pointer; 
@@ -181,26 +182,25 @@ nav {
     font-size: 150%;
 }
 
-/* ------------------------ Mobile Nav --------------------------- */
+/* ------------------------ Desktop Nav --------------------------- */
 
-@media only screen and (max-width: 620px) {
+@media only screen and (min-width: 620px) {
     
     .mobile-nav-icon {
-        display: inline-block;
+        /* hide for desktop etc */
+        display: none;
     }
     
     .nav-top-right {
-        display: none;
+        display: inline;
     }
     
     .nav-top-right li {
         /* line up the list items vertically*/
-        display: block;
+        display: inline-block;
     }
     
 }
-
-
 
 
 
@@ -232,10 +232,6 @@ nav {
 
 
 
-/* ---------------------- Sticky Mobile Nav ------------------------- */
-
-
-
 
 
 /* -------------------------------------------------------
@@ -247,7 +243,7 @@ nav {
 
 
 
-
+/* ------------------ Mobile Hero  ----------------- */
 
 
 
@@ -263,7 +259,7 @@ header {
   background-size: cover;
   background-position: center;
 
-  /* instead of showing the whole image, we scroll past the image */
+  /* scroll past the image */
   background-attachment: fixed;
 
   /* 100% of viewport */
@@ -283,21 +279,33 @@ header {
   /*background-color: rgba(28, 255, 0, 0.51);*/
 }
 
-.nameplate {
-  /* in the worst case, show this text OVER the picture of my face */
-  z-index: 2; 
+
+.banner img {
+    /* round! */
+    border-radius: 50%;
     
-  margin-left: 10%;
-  display: inline-block;
-  float: left;
+    position: static;
 
-  /* as a group, these vertically center the element */
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
+    display: block;
+        
+    width: 50vw;        
+        
+    /* centers it */
+    margin-left: auto;
+    margin-right: auto;
+}
 
-  /*background-color: rgba(255, 0, 0, 0.51);*/
+
+.nameplate {
+    z-index: 2; 
+    
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+
+    /*background-color: rgba(255, 0, 0, 0.51);*/
 }
 
 h1,
@@ -308,7 +316,7 @@ h1,
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 7.5vw;
   text-align: center;
   margin: 0;
     padding: 0 0;
@@ -319,18 +327,19 @@ h1 {
 
 /* line that appears after heading */
 h1:after{
-  display: block;
-  height: 0;
-  width: 27vw;
-  border-bottom: 1px solid white;
-
-  content: " ";  /* content is required */
+    display: block;
+    height: 0;
+    border-bottom: 1px solid white;
+    
+    width: 40.5vw;
+    margin-top: 1.35vw;
+    margin-bottom: 1.05vw;
 
     /* centers it */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.9vw;
-    margin-bottom: 0.7vw;
+    
+    content: " ";  /* content is required */
 }
 
 
@@ -341,88 +350,61 @@ h1:after{
 }
 
 .nameplate li {
-    font-size: 3.5vw;
-    padding: 0 1vw;
+    font-size: 5.25vw;
+    padding: 0 1.5vw;
 
     display: inline-block;
 }
 
-.banner img {
-    /* in the worst case, show this picture OVER the nameplate text */
-    position: relative;
-    z-index: 0;
+
+/* ------------------ Desktop Hero  ----------------- */
+
+@media only screen and (min-width: 620px) {
+
     
-    display: inline-block;
-    float: right;
-    border-radius: 50%;
-    margin-right: 10%;
-    width: 30vw;
-}
+    .banner img {
+        /* in the worst case, show this picture under other elements */
+        position: relative;
+        z-index: 0;
 
-
-/* ------------------ Mobile Hero  ----------------- */
-
-@media only screen and (max-width: 620px) {
-    
-    .banner {
-      /* as a group, these vertically center the element */
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(0%, -50%);
-      transform: translate(0%, -50%);
-
-      width: 100%;
+        /* put this on the right */
+        display: inline-block;
+        float: right;
+        margin-right: 10%;
+        margin-left: 0;
+        
+        width: 30vw;
     }
-    
     
     .nameplate {
         /* as a group, these vertically center the element */
-
-
-        -webkit-transform: translate(0%, 0%);
-        transform: translate(0%, 0%);
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
         
-      position: static;
-        
-        margin-top: 2vh;
-        margin-left: auto;
-        margin-right: auto;
-        
-      display: block;
-      float: none;
-        
+        /* put it on the left */
+        margin-left: 10%;
+        display: inline-block;
+        float: left;        
     }
     
+    
     h1 {
-      font-size: 7.5vw;
-
+      font-size: 5vw;
     }
 
 
     /* line that appears after heading */
     h1:after{
-
-      width: 40.5vw;
-
-        margin-top: 1.35vw;
-        margin-bottom: 1.05vw;
+        width: 27vw;
+        margin-top: 0.9vw;
+        margin-bottom: 0.7vw;
     }
     
     .nameplate li {
-        font-size: 5.25vw;
-        padding: 0 1.5vw;
-    }
-    
-    .banner img {
-        position: static;
-
-        display: block;
-        float: none;
-        
-        width: 50vw;        
-        
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 3.5vw;
+        padding: 0 1vw;
     }
 }
 
