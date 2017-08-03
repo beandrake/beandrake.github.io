@@ -39,12 +39,23 @@ section {
 
 .long-copy {
     display: inline-block;  
-    margin-left: 15%;
-    width: 70%;
+    margin-left: 5%;
+    width: 90%;
     
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+@media only screen and (min-width: 620px) {
+    
+    .long-copy {
+        margin-left: 15%;
+        width: 70%;
+
+        padding-left: 30px;
+        padding-right: 30px;
+    }  
+}
+
 
 .long-copy p {
     padding-bottom: 10px;
@@ -268,15 +279,18 @@ header {
 
 
 .banner {
-  /* as a group, these vertically center the element */
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0%, -50%);
-  transform: translate(0%, -50%);
+    /* as a group, these vertically center the element */
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
 
-  width: 100%;
+    width: 100%;
 
-  /*background-color: rgba(28, 255, 0, 0.51);*/
+    /* all of the banner font-sizes will scale from this */
+    font-size: 1.5vw;
+
+    /*background-color: rgba(28, 255, 0, 0.51);*/
 }
 
 
@@ -316,7 +330,7 @@ h1,
 }
 
 h1 {
-  font-size: 7.5vw;
+  font-size: 500%;
   text-align: center;
   margin: 0;
     padding: 0 0;
@@ -331,7 +345,7 @@ h1:after{
     height: 0;
     border-bottom: 1px solid white;
     
-    width: 40.5vw;
+    width: 42%;
     margin-top: 1.35vw;
     margin-bottom: 1.05vw;
 
@@ -350,7 +364,7 @@ h1:after{
 }
 
 .nameplate li {
-    font-size: 5.25vw;
+    font-size: 350%;
     padding: 0 1.5vw;
 
     display: inline-block;
@@ -361,6 +375,9 @@ h1:after{
 
 @media only screen and (min-width: 620px) {
 
+    .banner {
+        font-size: 1.00vw;
+    }
     
     .banner img {
         /* in the worst case, show this picture under other elements */
@@ -390,20 +407,15 @@ h1:after{
     }
     
     
-    h1 {
-      font-size: 5vw;
-    }
-
 
     /* line that appears after heading */
     h1:after{
-        width: 27vw;
+        width: 70%;
         margin-top: 0.9vw;
         margin-bottom: 0.7vw;
     }
     
     .nameplate li {
-        font-size: 3.5vw;
         padding: 0 1vw;
     }
 }
