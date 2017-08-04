@@ -156,5 +156,47 @@ $(document).ready(function() {
             }
         }
     });
+  
+    
+    
+    
+    
+    
+    /* ------------------------------------------
+            Open Project Information on Click
+    -------------------------------------------- */
+    
+    // animate project info to close
+    $.fn.setProjectToUp = function(icon, content) {
+
+        $(content).slideUp(400); 
+        
+        icon.addClass('ion-chevron-down');
+        icon.removeClass('ion-chevron-up'); 
+    }
+
+    
+    // animate project info to open
+    $.fn.setProjectToDown = function(icon, content) {
+
+        $(content).slideDown(400);
+
+        icon.removeClass('ion-chevron-down');
+        icon.addClass('ion-chevron-up'); 
+    }
+    
+    
+    // when the project arrow is clicked, open or close project info accordingly
+    $('.js--project-arrow').click(function() {
+        var icon = $('i', $(this));
+        var project = $(this).parent().parent();
+        var info = $('.js--project-prose', $(project));
+        
+        if (icon.hasClass('ion-chevron-down')) {
+            $.fn.setProjectToDown(icon, info);
+        } else {
+            $.fn.setProjectToUp(icon, info);
+        }
+    });
     
 });
