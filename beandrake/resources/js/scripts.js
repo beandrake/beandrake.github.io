@@ -1,5 +1,8 @@
 $(document).ready(function() {
     
+    // starts as empty jQuery object
+    var theOpenProject = $();
+    
 
     /* ------------------------------------------
                 Add/Remove Sticky Nav
@@ -167,35 +170,48 @@ $(document).ready(function() {
     -------------------------------------------- */
     
     // animate project info to close
-    $.fn.setProjectToUp = function(icon, content) {
+    $.fn.setProjectToUp = function(icon, project) {
 
-        $(content).slideUp(400); 
+        var info = $('.js--project-prose', $(project));    
+        $(info).slideUp(400); 
         
         icon.addClass('ion-chevron-down');
         icon.removeClass('ion-chevron-up'); 
+        
+        theOpenProject = $();
     }
 
     
     // animate project info to open
-    $.fn.setProjectToDown = function(icon, content) {
+    $.fn.setProjectToDown = function(icon, project) {
 
-        $(content).slideDown(400);
+        // if another project is open, close it
+        if(theOpenProject !== $()) {
+            var oldIcon = $('i', theOpenProject);
+            $.fn.setProjectToUp(oldIcon, theOpenProject);
+        }
+        
+        var info = $('.js--project-prose', $(project));
+        $(info).slideDown(400);
 
         icon.removeClass('ion-chevron-down');
         icon.addClass('ion-chevron-up'); 
+        
+        theOpenProject = project;
     }
+    
     
     
     // when the project arrow is clicked, open or close project info accordingly
     $('.js--project-arrow').click(function() {
+
         var icon = $('i', $(this));
-        var project = $(this).parent().parent();
-        var info = $('.js--project-prose', $(project));
+        var project = $(this).closest('.project-item');
         
         if (icon.hasClass('ion-chevron-down')) {
-            $.fn.setProjectToDown(icon, info);
+            $.fn.setProjectToDown(icon, project);
         } else {
-            $.fn.setProjectToUp(icon, info);
+            $.fn.setProjectToUp(icon, project);
         }
     });
     
