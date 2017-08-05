@@ -567,27 +567,27 @@ h1:after{
 /* ---- Indiviual Project Background Images ---- */
 
 .project-item.lotr-witn {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/lotr-witn/screen1.jpg);    
 }
 
 .project-item.gome {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/gome/wideshot.jpg);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/gome/wideshot.jpg);    
 }
 
 .project-item.halo4 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/halo4/grifball.jpg);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/halo4/grifball.jpg);    
 }
 
 .project-item.htl {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/htl/htl_final.png);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/htl/htl_final.png);    
 }
 
 .project-item.this-website {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../vendors/img/berry-van-der-velden-32818.jpg);
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../vendors/img/berry-van-der-velden-32818.jpg);    
 }
 
