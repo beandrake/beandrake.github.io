@@ -294,7 +294,7 @@ header {
     width: 100%;
 
     /* all of the banner font-sizes will scale from this */
-    font-size: 1.5vw;
+    font-size: 1.75vw;
 
     /*background-color: rgba(28, 255, 0, 0.51);*/
 }
@@ -499,29 +499,23 @@ h1:after{
     border-bottom: 0.5px solid white;
 }
 
-.project-details ul {
-    display: inline-block; 
+.project-details table {
     padding-top: 5px;
-    padding-left: 10px; 
+}
+
+.project-details tr:first-child td{
     padding-bottom: 4px;
 }
 
-.project-details li {
-    list-style: none;         /* removes bullets */    
-
-    padding: 4px 0; 
+.project-details td {
+    padding-left: 10px;
+    vertical-align: text-top;
+    line-height: 125%;
 }
 
-.project-details .answers {
-/*    font-weight: 300;*/
-    font-size: 95%;
+.project-details td:first-child {
+    font-weight: 100;
 }
-
-.project-media-type,
-.project-role{
-    margin-left: 10px;
-}
-
 
 .project-prose {
     display: none;
