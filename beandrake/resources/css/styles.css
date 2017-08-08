@@ -442,6 +442,10 @@ h1:after{
   border-right: 1px solid #ddd;
 }
 
+.introduction p {
+  text-align: center;
+}
+
 
 .goal p {
   text-align: center;
@@ -475,7 +479,7 @@ h1:after{
 
 .project-item {
     padding-top: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
     
     border-radius: 20px;
     
@@ -518,8 +522,6 @@ h1:after{
 }
 
 .project-prose {
-    display: none;
-    
     background-color: white;
     
     border-radius: 2px;
