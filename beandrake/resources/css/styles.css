@@ -124,9 +124,12 @@ h2:after {
 nav {
     width: 100%;
     
+    padding: 0 10px;
+    padding-top: 20px;    
+    
     /* top-most layer is 9999*/
-    position: relative;
     z-index: 9999;
+    position: relative;
 }
 
 .nav-top-left {
@@ -194,7 +197,6 @@ nav {
     
     color: #fffaf0;
     float: right;
-    
     padding-top: 2px;
     font-size: 150%;
 }
@@ -237,6 +239,10 @@ nav {
     /* slightly darker shadow under the menu to give it a shadow/border */
     -webkit-box-shadow: 0 1px 2px #153185;
     box-shadow: 0 1px 2px #153185;
+    
+    padding-top: 0px;
+    padding: 0 0;
+    
     
 }
 
@@ -528,8 +534,14 @@ h1:after{
     
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media only screen and (min-width: 620px) {
+    .project-prose {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 
