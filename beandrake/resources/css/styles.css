@@ -76,15 +76,16 @@ section {
 
 
 h2 {
-  text-align: center;
+    text-align: center;
     
-  /*text-transform: uppercase;*/
-  /*color: #4169e1;*/
+    /*text-transform: uppercase;*/
+    /*color: #4169e1;*/
 
-  font-size: 200%;
-  font-weight: 300;
+    font-size: 200%;
+    font-weight: 300;
+    line-height: 120%;
     
-  word-spacing: 2px;
+    word-spacing: 2px;
 }
 
 /* a horizontal line that appears after h2 headings */
@@ -148,7 +149,8 @@ nav {
   padding-bottom: 4px;
 }
 
-.nav-top-left li {
+.nav-top-left li,
+.top-nav-arrow {
   margin-left: 12px;
     display: inline-block;    /* allows the elements to be side-by-side */
 }
@@ -189,21 +191,28 @@ nav {
   border-bottom: 1px solid #fffaf0;
 }
 
+.top-nav-arrow,
+.mobile-nav-icon {
+    padding-top: 2px;
+    font-size: 150%;
+    color: #fffaf0;
+}
+
+.top-nav-arrow {
+    display: none;
+}
+
 .mobile-nav-icon {
     display: inline-block;
+    float: right;
     
     /* let's give them a hand */
     cursor: pointer; 
-    
-    color: #fffaf0;
-    float: right;
-    padding-top: 2px;
-    font-size: 150%;
 }
 
 /* ------------------------ Desktop Nav --------------------------- */
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 720px) {
     
     .mobile-nav-icon {
         /* hide for desktop etc */
@@ -218,7 +227,6 @@ nav {
         /* line up the list items vertically*/
         display: inline-block;
     }
-    
 }
 
 
@@ -250,6 +258,18 @@ nav {
 .sticky .section-link:visited {
   color: #fffaf0;
 }
+
+
+/* Commented out to prevent the arrow from replacing beandrake.com */
+/*
+.sticky .nav-top-left {
+    display: none;
+}
+
+.sticky .top-nav-arrow {
+    display: inline;
+}
+*/
 
 
 
@@ -607,12 +627,25 @@ h1:after{
 ---------------------------------------------------------*/
 
 
+/* icons have a lot of white space at the top, remove some margin from the preceding element to have this section look consistent with the others */
+#social h2:after {
+    margin-bottom: 10px;
+}
 
+/* icons also have some white space at the bottom, so remove some margin from the section padding to have this section look consistent with the others */
+#social {
+    padding-bottom: 30px;
+}
+@media only screen and (min-width: 620px) {
+    #social {
+        padding-bottom: 60px;
+    }
+}
 
 
 .social-links {
-  width: 100%;
-  display: inline-block;
+    width: 100%;
+    display: inline-block;
 }
 
 .social-links ul {
