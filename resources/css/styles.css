@@ -368,6 +368,11 @@ header {
 
     /*background-color: rgba(28, 255, 0, 0.51);*/
 }
+@media only screen and (min-width: 620px) {
+    .banner {
+        font-size: 1.00vw;
+    }
+}
 
 
 .banner img {
@@ -384,6 +389,21 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+@media only screen and (min-width: 620px) {
+    .banner img {
+        /* in the worst case, show this picture under other elements */
+        position: relative;
+        z-index: 0;
+
+        /* put this on the right */
+        display: inline-block;
+        float: right;
+        margin-right: 10%;
+        margin-left: 0;
+        
+        width: 30vw;
+    }
+}
 
 
 .nameplate {
@@ -397,6 +417,21 @@ header {
 
     /*background-color: rgba(255, 0, 0, 0.51);*/
 }
+@media only screen and (min-width: 620px) {
+    .nameplate {
+        /* as a group, these vertically center the element */
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+        
+        /* put it on the left */
+        margin-left: 10%;
+        display: inline-block;
+        float: left;        
+    }
+}
+
 
 h1,
 .nameplate li {
@@ -431,11 +466,21 @@ h1:after{
     
     content: " ";  /* content is required */
 }
+@media only screen and (min-width: 620px) {
+    /* line that appears after heading */
+    h1:after{
+        width: 73%;
+        
+        /* explicitly different values for this view because for some reason it looks worse without this; is it an optical illusion or is there some nuance of spacing that is the cause? */
+        margin-top: 0.9vw;
+        margin-bottom: 0.7vw;
+    }
+}
 
 
 .nameplate ul{
   text-align: center;
-
+   margin-top: 10px;
 /*  background-color: rgba(65, 105, 225, 0.51);*/
 }
 
@@ -445,58 +490,13 @@ h1:after{
 
     display: inline-block;
 }
-
-
-/* ------------------ Desktop Hero  ----------------- */
-
 @media only screen and (min-width: 620px) {
-
-    .banner {
-        font-size: 1.00vw;
-    }
-    
-    .banner img {
-        /* in the worst case, show this picture under other elements */
-        position: relative;
-        z-index: 0;
-
-        /* put this on the right */
-        display: inline-block;
-        float: right;
-        margin-right: 10%;
-        margin-left: 0;
-        
-        width: 30vw;
-    }
-    
-    .nameplate {
-        /* as a group, these vertically center the element */
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0%, -50%);
-        transform: translate(0%, -50%);
-        
-        /* put it on the left */
-        margin-left: 10%;
-        display: inline-block;
-        float: left;        
-    }
-    
-    
-
-    /* line that appears after heading */
-    h1:after{
-        width: 73%;
-        
-        /* explicitly different values for this view because for some reason it looks worse without this; is it an optical illusion or is there some nuance of spacing that is the cause? */
-        margin-top: 0.9vw;
-        margin-bottom: 0.7vw;
-    }
-    
-    .nameplate li {
-        padding: 0 1vw;
-    }
+   .nameplate li {
+      padding: 0 1vw;
+   }
 }
+
+
 
 
 
