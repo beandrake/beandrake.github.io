@@ -329,12 +329,6 @@ nav {
 
 
 
-
-/* ------------------ Mobile Hero  ----------------- */
-
-
-
-
 header {
   /*background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
   /*background-image: linear-gradient(to right, rgb(0, 31, 62), rgba(32, 79, 193, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
@@ -368,7 +362,7 @@ header {
 
     /*background-color: rgba(28, 255, 0, 0.51);*/
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (orientation: landscape) {
     .banner {
         font-size: 1.00vw;
     }
@@ -389,7 +383,7 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (orientation: landscape) {
     .banner img {
         /* in the worst case, show this picture under other elements */
         position: relative;
@@ -417,7 +411,7 @@ header {
 
     /*background-color: rgba(255, 0, 0, 0.51);*/
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (orientation: landscape) {
     .nameplate {
         /* as a group, these vertically center the element */
         position: absolute;
@@ -466,7 +460,7 @@ h1:after{
 
    content: " ";  /* content is required */
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (orientation: landscape) {
     /* line that appears after heading */
     h1:after{
         width: 83%; /* based on width of screen, and since this is now centered,
@@ -487,12 +481,11 @@ h1:after{
 
     display: inline-block;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (orientation: landscape) {
    .nameplate li {
       padding: 0 1vw;
    }
 }
-
 
 
 
