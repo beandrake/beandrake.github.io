@@ -141,6 +141,12 @@ nav {
   float: right;
   display: none;
 }
+@media only screen and (min-width: 720px) { 
+    .nav-top-right {
+        display: inline;
+    }
+}
+
 
 .nav-top-left li,
 .nav-top-right li {
@@ -151,17 +157,27 @@ nav {
 
 .nav-top-left li,
 .top-nav-arrow {
-  margin-left: 12px;
-    display: inline-block;    /* allows the elements to be side-by-side */
+   margin-left: 12px;
+   display: inline-block;    /* allows the elements to be side-by-side */
 }
 
 .nav-top-right li {
-  margin-left: 40px;
+   margin-left: 40px;
+   vertical-align: middle;
+}
+@media only screen and (min-width: 720px) {
+    .nav-top-right li {
+        /* line up the list items vertically*/
+        display: inline-block;
+    }
 }
 
+/* last item contains icons */
 .nav-top-right li:last-child,
 .mobile-nav-icon {
-  margin-right: 12px;
+   margin-right: 12px;
+   padding-top: 0px;
+   padding-bottom: 0px;
 }
 
 
@@ -191,6 +207,38 @@ nav {
   border-bottom: 1px solid #fffaf0;
 }
 
+
+
+
+/* - Icon Links - */
+.icon-link {
+   text-decoration: none;
+}
+
+.ion-social-linkedin,
+.ion-social-github {
+   font-size: 150%;
+   color: #fffaf0; 
+
+   
+   -webkit-transition: color 0.3s;
+   transition: color 0.3s;
+}
+
+/* - icons share an li, this adds space between them - */
+.icon-link-github {
+   margin-left: 15px;
+}
+@media only screen and (min-width: 720px) {
+   .icon-link-github {
+      margin-left: 40px;
+   }
+}
+
+
+
+/* - Mobile Nav Icon - */
+
 .top-nav-arrow,
 .mobile-nav-icon {
     padding-top: 2px;
@@ -198,6 +246,8 @@ nav {
     color: #fffaf0;
 }
 
+
+/* - goodbye for now - */
 .top-nav-arrow {
     display: none;
 }
@@ -209,23 +259,11 @@ nav {
     /* let's give them a hand */
     cursor: pointer; 
 }
-
-/* ------------------------ Desktop Nav --------------------------- */
-
 @media only screen and (min-width: 720px) {
     
     .mobile-nav-icon {
         /* hide for desktop etc */
         display: none;
-    }
-    
-    .nav-top-right {
-        display: inline;
-    }
-    
-    .nav-top-right li {
-        /* line up the list items vertically*/
-        display: inline-block;
     }
 }
 
@@ -500,7 +538,17 @@ h1:after{
 
 
 #projects {
-    background-color: #f0f0f0;
+   background-color: #c5d1f6;
+}
+@media only screen and (min-width: 620px) {
+   /* - trim some space from the bottom of the last section before footer - */
+    #projects {
+        padding-bottom: 40px;
+    }
+}
+
+#projects h2 {
+   color: black;
 }
 
 .project-item {
@@ -662,6 +710,7 @@ h1:after{
   padding: 10px;
 }
 
+/*
 .ion-social-linkedin,
 .ion-social-github{
   font-size: 300%;
@@ -680,6 +729,7 @@ h1:after{
 .ion-social-github:active {
   color: #24292e;
 }
+*/
 
 
 
