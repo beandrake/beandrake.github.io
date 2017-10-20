@@ -172,16 +172,22 @@ nav {
     }
 }
 
-/* last item contains icons */
+
 .nav-top-right li:last-child,
 .mobile-nav-icon {
    margin-right: 12px;
-   padding-top: 0px;
-   padding-bottom: 0px;
 }
 
-
-
+/* last item contains icons */
+.nav-top-right li:last-child {   
+   padding-top: 5px;
+   padding-bottom: 0px;
+}
+@media only screen and (min-width: 720px) {
+    .nav-top-right li:last-child {
+        padding-top: 0px;
+    }
+}
 
 
 .nav-top-right .section-link {
