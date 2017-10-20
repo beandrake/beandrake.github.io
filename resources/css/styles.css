@@ -742,17 +742,20 @@ h1:after{
 
 
 footer {
-    background-color: #153185;
-    padding: 40px;
-    font-size: 80%;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;
-    
+   background-color: #153185;
+   padding: 40px;
+   font-size: 80%;
+   font-family: 'Lato', 'Arial', sans-serif;
+   font-weight: 300;
+   line-height: 1.4;    
 }
 
 footer p {
-    color: white;
-    text-align: center;
+   color: white;
+   text-align: center;
+}
+footer p:last-child {
+   margin-top: 4px;
 }
 
 
