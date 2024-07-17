@@ -20,7 +20,7 @@ $(document).ready(function() {
 //            $('nav').slideUp(400);
         }      
     }, {
-        offset: '91px'  /* do this 31px before the section begins */
+        offset: '91px'  /* do the stuff this many pixels before the section begins */
     });
     
     
