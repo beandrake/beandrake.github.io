@@ -420,7 +420,7 @@ header {
         transform: translate(0%, -50%);
         
         /* put it on the left */
-        margin-left: 10%;
+        margin-left: 8%;
         display: inline-block;
         float: left;        
     }
@@ -502,7 +502,7 @@ h1:after{
   border-right: 1px solid #ddd;
 }
 
-.introduction p {
+.introduction .center {
   text-align: center;
 }
 
@@ -522,6 +522,16 @@ h1:after{
   padding-bottom: 25px;
 }
 
+.introduction .paragraph {
+  padding-top: 0.3em;
+}
+.introduction .paragraph a {
+    text-decoration: none;
+}
+.introduction .paragraph a:hover {
+    text-decoration: underline;
+    color: #4169e1;
+}
 
 
 
@@ -564,6 +574,14 @@ h1:after{
 .project-title h3,
 .project-details,
 .project-arrow a {    
+    color: white;
+}
+
+.project-title a {
+    text-decoration: none;
+}
+.project-title a:hover {
+    text-decoration: underline;
     color: white;
 }
 
