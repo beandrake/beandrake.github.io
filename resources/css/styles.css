@@ -5,109 +5,72 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html,
 body {
-  background-color: #fff;
-  color: #444;
+	background-color: #fff;
+	color: #444;
 
-  font-family: 'Open Sans', 'Arial', sans-serif;
-  font-weight: 400;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-weight: 400;
 
-  /* the base size that all other relative sizes are based on */
-  font-size: 17px;
-  text-rendering: optimizeLegibility;
+	/* the base size that all other relative sizes are based on */
+	font-size: 17px;
+	text-rendering: optimizeLegibility;
 
-  /* hides content that overflows on the X-axis */
-  overflow-x: hidden;
+	/* hides content that overflows on the X-axis */
+	overflow-x: hidden;
 }
-
 
 
 section {
-    padding-top: 50px; 
-    padding-bottom: 40px;
-    
-    /* prevents outline after being link-scrolled to */
-    outline: none;
+	padding-top: 50px; 
+	padding-bottom: 40px;
+	
+	/* prevents outline after being link-scrolled to */
+	outline: none;
 }
 @media only screen and (min-width: 620px) {
-    
-    section {
-        padding: 80px 0; 
-    }
+	
+	section {
+		padding: 80px 0; 
+	}
 }
-
-
-.long-copy {
-    display: inline-block;  
-    margin-left: 5%;
-    width: 90%;
-    
-    padding-left: 10px;
-    padding-right: 10px;
-}
-@media only screen and (min-width: 620px) {
-    
-    .long-copy {
-        margin-left: 15%;
-        width: 70%;
-
-        padding-left: 30px;
-        padding-right: 30px;
-    }  
-}
-
-
-.long-copy p {
-    padding-bottom: 10px;
-    line-height: 150%;
-}
-
-
-
-
-
 
 
 h2 {
-    text-align: center;
-    
-    /*text-transform: uppercase;*/
-    /*color: #4169e1;*/
+	text-align: center;
+	
+	/*text-transform: uppercase;*/
+	/*color: #4169e1;*/
 
-    font-size: 200%;
-    font-weight: 300;
-    line-height: 120%;
-    
-    word-spacing: 2px;
+	font-size: 200%;
+	font-weight: 300;
+	line-height: 120%;
+	
+	word-spacing: 2px;
 }
 
 /* a horizontal line that appears after h2 headings */
 h2:after {
-  display: block;
-  height: 2px;
-  width: 100px;
-  background-color: #4169e1;
+	display: block;
+	height: 2px;
+	width: 100px;
+	background-color: #4169e1;
 
-  /* need content, but we don't want to show anything, so we make it a space */
-  content: " ";
+	/* need content, but we don't want to show anything, so we make it a space */
+	content: " ";
 
-  /* centers it */
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
+	/* centers it */
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
-
-
-
-
-
 
 
 
@@ -123,94 +86,94 @@ h2:after {
 /* ------------------------ Mobile Nav First! --------------------------- */
 
 nav {
-    width: 100%;
-    
-    padding: 0 10px;
-    padding-top: 20px;    
-    
-    /* top-most layer is 9999*/
-    z-index: 9999;
-    position: relative;
+	width: 100%;
+	
+	padding: 0 10px;
+	padding-top: 20px;
+	
+	/* top-most layer is 9999*/
+	z-index: 9999;
+	position: relative;
 }
 
 .nav-top-left {
-  float: left;
+	float: left;
 }
 
 .nav-top-right {
-  float: right;
-  display: none;
+	float: right;
+	display: none;
 }
 @media only screen and (min-width: 720px) { 
-    .nav-top-right {
-        display: inline;
-    }
+	.nav-top-right {
+		display: inline;
+	}
 }
 
 
 .nav-top-left li,
 .nav-top-right li {
-  list-style: none;         /* removes bullets */
-  padding-top: 7px;
-  padding-bottom: 4px;
+	list-style: none;  /* removes bullets */
+	padding-top: 7px;
+	padding-bottom: 4px;
 }
 
 .nav-top-left li,
 .top-nav-arrow {
-   margin-left: 12px;
-   display: inline-block;    /* allows the elements to be side-by-side */
+	margin-left: 12px;
+	display: inline-block;  /* allows the elements to be side-by-side */
 }
 
 .nav-top-right li {
-   margin-left: 40px;
-   vertical-align: middle;
+	margin-left: 40px;
+	vertical-align: middle;
 }
 @media only screen and (min-width: 720px) {
-    .nav-top-right li {
-        /* line up the list items vertically*/
-        display: inline-block;
-    }
+	.nav-top-right li {
+		/* line up the list items vertically*/
+		display: inline-block;
+	}
 }
 
 
 .nav-top-right li:last-child,
 .mobile-nav-icon {
-   margin-right: 12px;
+	margin-right: 12px;
 }
 
 /* last item contains icons */
-.nav-top-right li:last-child {   
-   padding-top: 5px;
-   padding-bottom: 0px;
+.nav-top-right li:last-child {
+	padding-top: 5px;
+	padding-bottom: 0px;
 }
 @media only screen and (min-width: 720px) {
-    .nav-top-right li:last-child {
-        padding-top: 0px;
-    }
+	.nav-top-right li:last-child {
+		padding-top: 0px;
+	}
 }
 
 
 .nav-top-right .section-link {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .section-link:link,
 .section-link:visited {
-  text-decoration: none;
+	text-decoration: none;
 
-  font-family: 'Lato', 'Arial', sans-serif;
-  font-weight: 300;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
 
-  color: #fffaf0;
+	color: #fffaf0;
 
-  border-bottom: 1px solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
+	border-bottom: 1px solid transparent;
+	-webkit-transition: border-bottom 0.2s;
+	transition: border-bottom 0.2s;
 }
 
 .section-link:hover,
 .section-link:active {
-  border-bottom: 1px solid #fffaf0;
+	border-bottom: 1px solid #fffaf0;
 }
 
 
@@ -218,27 +181,27 @@ nav {
 
 /* - Icon Links - */
 .icon-link {
-   text-decoration: none;
+	text-decoration: none;
 }
 
 .ion-social-linkedin,
 .ion-social-github {
-   font-size: 150%;
-   color: #fffaf0; 
+	font-size: 150%;
+	color: #fffaf0; 
 
-   
-   -webkit-transition: color 0.3s;
-   transition: color 0.3s;
+	
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
 }
 
 /* - icons share an li, this adds space between them - */
 .icon-link-github {
-   margin-left: 15px;
+	margin-left: 15px;
 }
 @media only screen and (min-width: 720px) {
-   .icon-link-github {
-      margin-left: 40px;
-   }
+	.icon-link-github {
+		margin-left: 40px;
+	}
 }
 
 
@@ -247,30 +210,30 @@ nav {
 
 .top-nav-arrow,
 .mobile-nav-icon {
-    padding-top: 2px;
-    font-size: 150%;
-    color: #fffaf0;
+	padding-top: 2px;
+	font-size: 150%;
+	color: #fffaf0;
 }
 
 
 /* - goodbye for now - */
 .top-nav-arrow {
-    display: none;
+	display: none;
 }
 
 .mobile-nav-icon {
-    display: inline-block;
-    float: right;
-    
-    /* let's give them a hand */
-    cursor: pointer; 
+	display: inline-block;
+	float: right;
+	
+	/* let's give them a hand */
+	cursor: pointer; 
 }
 @media only screen and (min-width: 720px) {
-    
-    .mobile-nav-icon {
-        /* hide for desktop etc */
-        display: none;
-    }
+	
+	.mobile-nav-icon {
+		/* hide for desktop etc */
+		display: none;
+	}
 }
 
 
@@ -283,35 +246,35 @@ nav {
 
 
 .sticky {
-    position: fixed;
-    
-    /* #4169e1 with slight transparency */
-    background-color: rgba(65, 105, 225, 0.95);
-    
-    /* slightly darker shadow under the menu to give it a shadow/border */
-    -webkit-box-shadow: 0 1px 2px #153185;
-    box-shadow: 0 1px 2px #153185;
-    
-    padding-top: 0px;
-    padding: 0 0;
-    
-    
+	position: fixed;
+	
+	/* #4169e1 with slight transparency */
+	background-color: rgba(65, 105, 225, 0.95);
+	
+	/* slightly darker shadow under the menu to give it a shadow/border */
+	-webkit-box-shadow: 0 1px 2px #153185;
+	box-shadow: 0 1px 2px #153185;
+	
+	padding-top: 0px;
+	padding: 0 0;
+	
+	
 }
 
 .sticky .section-link:link,
 .sticky .section-link:visited {
-  color: #fffaf0;
+	color: #fffaf0;
 }
 
 
 /* Commented out to prevent the arrow from replacing beandrake.com */
 /*
 .sticky .nav-top-left {
-    display: none;
+	display: none;
 }
 
 .sticky .top-nav-arrow {
-    display: inline;
+	display: inline;
 }
 */
 
@@ -330,161 +293,159 @@ nav {
 
 
 header {
-  /*background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
-  /*background-image: linear-gradient(to right, rgb(0, 31, 62), rgba(32, 79, 193, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
-  /*background-image: linear-gradient(to right, rgb(0, 15, 30), rgba(0, 15, 30, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 1)), to(rgba(0, 15, 30, 0.7))), url(../../vendors/img/berry-van-der-velden-32818.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 15, 30, 0.7)), url(../../vendors/img/berry-van-der-velden-32818.jpg);
+	/*background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
+	/*background-image: linear-gradient(to right, rgb(0, 31, 62), rgba(32, 79, 193, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
+	/*background-image: linear-gradient(to right, rgb(0, 15, 30), rgba(0, 15, 30, 0.7)), url(vendors/img/berry-van-der-velden-32818.jpg);*/
+	background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 1)), to(rgba(0, 15, 30, 0.7))), url(../../vendors/img/berry-van-der-velden-32818.jpg);
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 15, 30, 0.7)), url(../../vendors/img/berry-van-der-velden-32818.jpg);
 
-  /* finds a way to show as much of the image as possible */
-  background-size: cover;
-  background-position: center;
+	/* finds a way to show as much of the image as possible */
+	background-size: cover;
+	background-position: center;
 
-  /* scroll past the image */
-  background-attachment: fixed;
+	/* scroll past the image */
+	background-attachment: fixed;
 
-  /* 100% of viewport */
-  height: 100vh;
+	/* 100% of viewport */
+	height: 100vh;
 }
 
 
 .banner {
-    /* as a group, these vertically center the element */
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+	/* as a group, these vertically center the element */
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
 
-    width: 100%;
+	width: 100%;
 
-    /* all of the banner font-sizes will scale from this */
-    font-size: 1.75vw;
+	/* all of the banner font-sizes will scale from this */
+	font-size: 1.75vw;
 
-    /*background-color: rgba(28, 255, 0, 0.51);*/
+	/*background-color: rgba(28, 255, 0, 0.51);*/
 }
 @media only screen and (orientation: landscape) {
-    .banner {
-        font-size: 1.00vw;
-    }
+	.banner {
+		font-size: 1.00vw;
+	}
 }
 
 
 .banner img {
-    /* round! */
-    border-radius: 50%;
-    
-    position: static;
+	/* round! */
+	border-radius: 50%;
+	
+	position: static;
 
-    display: block;
-        
-    width: 50vw;        
-        
-    /* centers it */
-    margin-left: auto;
-    margin-right: auto;
+	display: block;
+	
+	width: 50vw;
+	
+	/* centers it */
+	margin-left: auto;
+	margin-right: auto;
 }
 @media only screen and (orientation: landscape) {
-    .banner img {
-        /* in the worst case, show this picture under other elements */
-        position: relative;
-        z-index: 0;
+	.banner img {
+		/* in the worst case, show this picture under other elements */
+		position: relative;
+		z-index: 0;
 
-        /* put this on the right */
-        display: inline-block;
-        float: right;
-        margin-right: 10%;
-        margin-left: 0;
-        
-        width: 30vw;
-    }
+		/* put this on the right */
+		display: inline-block;
+		float: right;
+		margin-right: 10%;
+		margin-left: 0;
+		
+		width: 30vw;
+	}
 }
 
 
 .nameplate {
-    z-index: 2; 
-    
-    margin-top: 2vh;
-    margin-left: auto;
-    margin-right: auto;
-    
-    display: block;
+	z-index: 2; 
+	
+	margin-top: 2vh;
+	margin-left: auto;
+	margin-right: auto;
+	
+	display: block;
 
-    /*background-color: rgba(255, 0, 0, 0.51);*/
+	/*background-color: rgba(255, 0, 0, 0.51);*/
 }
 @media only screen and (orientation: landscape) {
-    .nameplate {
-        /* as a group, these vertically center the element */
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0%, -50%);
-        transform: translate(0%, -50%);
-        
-        /* put it on the left */
-        margin-left: 8%;
-        display: inline-block;
-        float: left;        
-    }
+	.nameplate {
+		/* as a group, these vertically center the element */
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translate(0%, -50%);
+		transform: translate(0%, -50%);
+		
+		/* put it on the left */
+		margin-left: 8%;
+		display: inline-block;
+		float: left;
+	}
 }
 
 
 h1,
 .nameplate li {
-    font-family: 'Josefin Sans', 'Arial', sans-serif;
-    font-weight: 100;
-    color: white;
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+	font-weight: 100;
+	color: white;
 }
 
 h1 {
-   font-size: 500%;
-   text-align: center;
-   margin: 0;
-   padding: 0 0;
+	font-size: 500%;
+	text-align: center;
+	margin: 0;
+	padding: 0 0;
 
-  /*background-color: rgba(65, 105, 225, 0.51);*/
+	/*background-color: rgba(65, 105, 225, 0.51);*/
 }
 
 
 /* line that appears after heading */
 h1:after{
-   display: block;
-   height: 1px;
-   border-bottom: 0.5px solid white;
+	display: block;
+	height: 1px;
+	border-bottom: 0.5px solid white;
 
-   width: 64%;
-   margin-top: 2%;
-   margin-bottom: 4%;
+	width: 78%;/*64%;*/
+	margin-top: 2%;
+	margin-bottom: 4%;
 
-   /* centers it */
-   margin-left: auto;
-   margin-right: auto;
+	/* centers it */
+	margin-left: auto;
+	margin-right: auto;
 
-   content: " ";  /* content is required */
+	content: " ";  /* content is required */
 }
 @media only screen and (orientation: landscape) {
-    /* line that appears after heading */
-    h1:after{
-        width: 83%; /* based on width of screen, and since this is now centered,
-        
-        /* explicitly different values for this view because for some reason it looks worse without this; is it an optical illusion or is there some nuance of spacing that is the cause? */
-    }
+	/* line that appears after heading */
+	h1:after{
+		width: 83%; /* based on width of screen */
+	}
 }
 
 
 .nameplate ul{
-  text-align: center;
-/*  background-color: rgba(65, 105, 225, 0.51);*/
+	text-align: center;
+/*background-color: rgba(65, 105, 225, 0.51);*/
 }
 
 .nameplate li {
-    font-size: 350%;
-    padding: 0 1.5vw;
+	font-size: 350%;
+	padding: 0 1.5vw;
 
-    display: inline-block;
+	display: inline-block;
 }
 @media only screen and (orientation: landscape) {
-   .nameplate li {
-      padding: 0 1vw;
-   }
+	.nameplate li {
+		padding: 0 1vw;
+	}
 }
 
 
@@ -496,43 +457,67 @@ h1:after{
                          About
 ---------------------------------------------------------*/
 
-
 .introduction {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
 }
 
-.introduction .center {
-  text-align: center;
+.introduction-outer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.introduction {
+	display: inline-block;
+	/*margin-left: 5%;*/
+	width: 90%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@media only screen and (min-width: 620px) {
+	
+	.introduction {
+		/*margin-left: 15%;*/
+		width: 70%;
+		max-width: 870px;
+		
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.introduction p {
+	padding-bottom: 10px;
+	line-height: 150%;
+}
+
+
+.introduction .paragraph {
+	padding-top: 0.3em;
+}
+.introduction .paragraph a {
+	text-decoration: none;
+}
+.introduction .paragraph a:hover {
+	text-decoration: underline;
+	color: #4169e1;
 }
 
 
 .goal p {
-  text-align: center;
-  font-size: 120%;
-  color: #4169e1;
+	text-align: center;
+	font-size: 120%;
+	color: #4169e1;
 }
 
-
 .goal p:first-child {
-  padding-top: 20px;
+	padding-top: 20px;
 }
 
 .goal p:last-child {
-  padding-bottom: 25px;
+	padding-bottom: 25px;
 }
-
-.introduction .paragraph {
-  padding-top: 0.3em;
-}
-.introduction .paragraph a {
-    text-decoration: none;
-}
-.introduction .paragraph a:hover {
-    text-decoration: underline;
-    color: #4169e1;
-}
-
 
 
 
@@ -544,143 +529,169 @@ h1:after{
 
 
 #projects {
-   background-color: #dbdbdb;
+	background-color: #dbdbdb;
 }
 @media only screen and (min-width: 620px) {
-   /* - trim some space from the bottom of the last section before footer - */
-    #projects {
-        padding-bottom: 40px;
-    }
+	/* - trim some space from the bottom of the last section before footer - */
+	#projects {
+		padding-bottom: 40px;
+	}
 }
 
 #projects h2 {
-   color: black;
+	color: black;
 }
 
+.long-copy {
+	display: inline-block;
+	margin-left: 5%;
+	width: 90%;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+@media only screen and (min-width: 620px) {
+	
+	.long-copy {
+		margin-left: 15%;
+		width: 70%;
+
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+
+.long-copy p {
+	padding-bottom: 10px;
+	line-height: 150%;
+}
+
+
 .project-item {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    
-    border-radius: 20px;
-    
-    background-color: #4169e1; /* just as a default */
-    
-    background-size: cover;
-    background-position: center;
-    
-    margin-bottom: 10px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	border-radius: 20px;
+	
+	background-color: #4169e1; /* just as a default */
+	
+	background-size: cover;
+	background-position: center;
+	
+	margin-bottom: 10px;
 }
 
 .project-title h3,
 .project-details,
-.project-arrow a {    
-    color: white;
+.project-arrow a {
+	color: white;
 }
 
 .project-title a {
-    text-decoration: none;
+	text-decoration: none;
 }
 .project-title a:hover {
-    text-decoration: underline;
-    color: white;
+	text-decoration: underline;
+	color: white;
 }
 
 .project-title h3 {
-    padding-bottom: 5px;
-    font-weight: 400;
-    border-bottom: 0.5px solid white;
+	padding-bottom: 5px;
+	font-weight: 400;
+	border-bottom: 0.5px solid white;
 }
 
 .project-details table {
-    padding-top: 5px;
+	padding-top: 5px;
 }
 
 .project-details tr:first-child td{
-    padding-bottom: 4px;
+	padding-bottom: 4px;
 }
 
 .project-details td {
-    padding-left: 10px;
-    vertical-align: text-top;
-    line-height: 125%;
+	padding-left: 10px;
+	vertical-align: text-top;
+	line-height: 125%;
 }
 
 .project-details td:first-child {
-    font-weight: 100;
+	font-weight: 100;
 }
 
 .project-prose {
-    background-color: white;
-    
-    border-radius: 2px;
-    
-    margin-top: 5px;
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+	background-color: white;
+	
+	border-radius: 2px;
+	
+	margin-top: 5px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 @media only screen and (min-width: 620px) {
-    .project-prose {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+	.project-prose {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
 }
 
 
 .project-prose ul {
-    padding-left: 18px;
+	padding-left: 18px;
 }
 
 .project-prose li {
-    font-size: 95%;
-    padding-bottom: 7px;
-    line-height: 135%;
+	font-size: 95%;
+	padding-bottom: 7px;
+	line-height: 135%;
 }
 
 
 .project-arrow {
-    text-align: center;
-    font-weight: 300;
+	text-align: center;
+	font-weight: 300;
 }
 
 .project-arrow a {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .project-item i {
-    font-size: 200%;
-    -webkit-transform: translate(0%, -50%);
-    transform: translate(0%, -50%);
+	font-size: 200%;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
 }
 
 
 /* ---- Indiviual Project Background Images ---- */
 
 .project-item.lotr-witn {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/lotr-witn/screen1.jpg);    
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/lotr-witn/screen1.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/lotr-witn/screen1.jpg);
 }
 
 .project-item.gome {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/gome/wideshot.jpg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/gome/wideshot.jpg);    
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/gome/wideshot.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/gome/wideshot.jpg);
 }
 
 .project-item.halo4 {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/halo4/grifball.jpg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/halo4/grifball.jpg);    
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/halo4/grifball.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/halo4/grifball.jpg);
 }
 
 .project-item.htl {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/htl/htl_final.png);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/htl/htl_final.png);    
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../resources/img/htl/htl_final.png);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../resources/img/htl/htl_final.png);
 }
 
 .project-item.this-website {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../vendors/img/berry-van-der-velden-32818.jpg);
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../vendors/img/berry-van-der-velden-32818.jpg);    
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.6))), url(../../vendors/img/berry-van-der-velden-32818.jpg);
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../../vendors/img/berry-van-der-velden-32818.jpg);
 }
 
 
@@ -691,57 +702,57 @@ h1:after{
 
 /* icons have a lot of white space at the top, remove some margin from the preceding element to have this section look consistent with the others */
 #social h2:after {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 /* icons also have some white space at the bottom, so remove some margin from the section padding to have this section look consistent with the others */
 #social {
-    padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 @media only screen and (min-width: 620px) {
-    #social {
-        padding-bottom: 60px;
-    }
+	#social {
+		padding-bottom: 60px;
+	}
 }
 
 
 .social-links {
-    width: 100%;
-    display: inline-block;
+	width: 100%;
+	display: inline-block;
 }
 
 .social-links ul {
-    width: 100%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+	width: 100%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .social-links li {
-  list-style: none;         /* removes bullets */
-  display: inline-block;    /* allows the elements to be side-by-side */
+	list-style: none;       /* removes bullets */
+	display: inline-block;  /* allows the elements to be side-by-side */
 
-  padding: 10px;
+	padding: 10px;
 }
 
 /*
 .ion-social-linkedin,
 .ion-social-github{
-  font-size: 300%;
-  color: #555;
+	font-size: 300%;
+	color: #555;
 
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
 }
 
 .ion-social-linkedin:hover,
 .ion-social-linkedin:active {
-  color: #0077B5;
+	color: #0077B5;
 }
 
 .ion-social-github:hover,
 .ion-social-github:active {
-  color: #24292e;
+	color: #24292e;
 }
 */
 
@@ -760,39 +771,39 @@ h1:after{
 
 
 footer {
-   background-color: #153185;
-   padding: 40px;
-   font-size: 80%;
-   font-family: 'Lato', 'Arial', sans-serif;
-   font-weight: 300;
-   line-height: 1.4;    
+	background-color: #153185;
+	padding: 40px;
+	font-size: 80%;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-weight: 300;
+	line-height: 1.4;
 }
 
 footer p {
-   color: white;
-   text-align: center;
+	color: white;
+	text-align: center;
 }
 footer p:last-child {
-   margin-top: 4px;
+	margin-top: 4px;
 }
 
 
 footer a:link,
 footer a:visited{
-    color: inherit;
-    
-    /* replace old-and-busted underline with new-hotness */
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid transparent;
-    
-    -webkit-transition: border-bottom 0.2s, color 0.2s;
-    
-    transition: border-bottom 0.2s, color 0.2s;
+	color: inherit;
+	
+	/* replace old-and-busted underline with new-hotness */
+	text-decoration: none;
+	padding-bottom: 1px;
+	border-bottom: 1px solid transparent;
+	
+	-webkit-transition: border-bottom 0.2s, color 0.2s;
+	
+	transition: border-bottom 0.2s, color 0.2s;
 }
 
 footer a:hover,
 footer a:active {
-    color: inherit;
-    border-bottom: 1px solid white;
+	color: inherit;
+	border-bottom: 1px solid white;
 }
